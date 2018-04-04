@@ -13,7 +13,7 @@ const BASE = `${Envs[process.env.NODE_ENV]}/v1/api`
 
 const URL = {
   TOKEN: `${BASE}/token`,
-  LOGIN: `${BASE}/users/admin/login`,
+  LOGIN: `${BASE}/users/admin/adminLogin`,
 
   ADDMEMO: `${BASE}/memos/admin/addMemos`,
   MEMOLIST: `${BASE}/memos/admin/memoList`,
