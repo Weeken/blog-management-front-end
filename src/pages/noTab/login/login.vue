@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="user_mask" @click.self="closeLogin">
+  <div class="user_mask">
     <form class="form">
       <h3>登  录</h3>
       <div class="field">
