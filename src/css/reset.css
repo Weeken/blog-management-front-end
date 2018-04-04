@@ -1,0 +1,139 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li, a,
+fieldset, form, label, legend, input, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    font-family: microsoft yahei;
+    font-weight: normal;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  background-color: #f3f3f3;
+}
+
+img{
+  border: 0;
+}
+img[src=""],img:not([src]){
+  opacity:0;
+}
+
+input{
+  /*去除手机浏览器Input内阴影*/
+  appearance:button;
+  -moz-appearance:button; /* Firefox */
+  -webkit-appearance:button; /* Safari 和 Chrome */
+}
+input::-webkit-input-placeholder { color: #bbb; font-size: 14px; font-weight: 100; }
+input:-moz-placeholder { color: #bbb; font-size: 14px; font-weight: 100; }
+input::-moz-placeholder { color: #bbb; font-size: 14px; font-weight: 100; }
+input:-ms-input-placeholder { color: #bbb; font-size: 14px; font-weight: 100; }
+
+li{
+  list-style: none;
+}
+
+a{
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: all .4s ease;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+.scaleY-enter-active, .scaleY-leave-active {
+  transition: all .2s ease-in-out;
+  transform-origin: 50% 0;
+}
+.scaleY-enter, .scaleY-leave-to {
+  opacity: 0;
+  transform: scaleY(0);
+}
+
+
+.translateX-enter-active, .translateX-leave-active {
+  transition: all 1s;
+}
+.translateX-enter, .translateX-leave-active {
+  opacity: 0;
+}
+.translateX-enter {
+  transform: translateX(1000px);
+}
+.translateX-leave-active {
+  transform: translateX(-1000px);
+}
+
+.translateY-enter-active, .translateY-leave-active {
+  transition: all 1s;
+}
+.translateY-enter, .translateY-leave-active {
+  opacity: 0;
+}
+.translateY-enter {
+  transform: translateY(1000px);
+}
+.translateY-leave-active {
+  transform: translateY(-1000px);
+}
+
+.backToTop-enter-active, .backToTop-leave-active {
+  transition: all .2s ease-in-out;
+}
+.backToTop-enter, .backToTop-leave-to {
+  opacity: 0;
+  transform: translateY(100px)
+}
+
+
+/**/
+.scale-enter{
+  animation: sacle-in .5s;
+}
+.scale-leave-active{
+  animation: sacle-in .5s reverse;
+}
+@keyframes sacle-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/**/
+.clear:after{
+  content:".";
+  display:block;
+  clear:both;
+  height:0;
+  overflow:hidden;
+  visibility:hidden;
+}
+
+button:focus {
+  outline: none;
+}

@@ -1,0 +1,291 @@
+[
+	{
+		"id": 0,
+		"src": "../../assets/card/card0.jpg",
+		"caption": "background-attachment：fixed",
+		"title": "IE11下鼠标滚动时，图片会跳动",
+		"desc": [
+					"解决：",
+					"1、进入IE11浏览器Internet选项->高级，取消勾选“使用平滑滚动”即可",
+					"2、将背景设置属性应用到body上，而不是body的子元素，图片就不会跳动了"
+				]
+	},
+	{
+		"id": 1,
+		"src": "../../assets/card/card1.jpg",
+		"caption": "setTimeout(function,0)",
+		"title": "setTimeout(f,0)的作用",
+		"desc": [
+					"setTimeout(f,0)的作用很简单，就是为了把f放到运行队列的最后去执行。",
+					"js解析器会把setTimeout(f,0)里的f压到队列的最后，因为它是异步操作。",
+					"比较老的浏览器大概需要16ms后才能执行，现在的Chrome浏览器之类的可以在4ms甚至更短的时间后执行。但是无论多短，都不可能是 0。",
+					"现代浏览器还提供了另外一个setTimeout(0)的替代品，那就是setImmediate(),但是如果考虑向下兼容，还是会用 setTimeout(f,0)"
+				]
+	},
+	{
+		"id": 2,
+		"src": "../../assets/card/card2.jpg",
+		"caption": "-ms-backface-visibility: hidden;",
+		"title": "IE下无效",
+		"desc": [
+					"待解决",
+					"backface-visibility无法使用"
+				]
+	},
+	{
+		"id": 3,
+		"src": "../../assets/card/card3.jpg",
+		"caption": "ready()与onload()",
+		"title": "$(document).ready()与window.onload()",
+		"desc": [
+					"$(document).ready()在dom文档树加载完之后执行一个函数（注意，这里面的文档树加载完不代表全部文件加载完）。",
+					"window.onload是在dom文档树加载完和所有文件加载完之后执行一个函数。",
+					"也就是说$(document).ready要比window.onload先执行。",
+					"$(document).ready()可以出现多次"
+				]
+	},
+	{
+		"id": 4,
+		"src": "../../assets/card/card4.jpg",
+		"caption": "清除浮动",
+		"title": "伪类清除浮动",
+		"desc": [
+					"在浮动元素的父元素设类名 clearfix;",
+					".clearfix:after{",
+					"content:'.';",
+					"display:block;",
+					"clear:both;",
+					"height:0;",
+					"overflow:hidden;",
+					"visibility:hidden;",
+					"}",
+					".clearfix{zoom:1;}//兼容IE,IE不支持:after"
+				]
+	},
+	{
+		"id": 5,
+		"src": "../../assets/card/card5.jpg",
+		"caption": "HTTP请求",
+		"title": "HTTP请求一般有四部分组成",
+		"desc": [
+					"1、HTTP请求的方法或动作如是GET还是POST请求",
+					"2、正在请求的URL",
+					"3、请求头,包含一些客户端环境信息,身份验证信息等",
+					"4、请求体,也就是请求正文,请求正文中可以包含客户端提交的查询字符串信息,表单信息等等"
+				]
+	},
+	{
+		"id": 6,
+		"src": "../../assets/card/card6.jpg",
+		"caption": "HTTP响应",
+		"title": "HTTP响应一般由三部分组成",
+		"desc": [
+					"1、一个数字和文字组成的状态码,用来显示请求是成功还是失败",
+					"2、响应头,响应头和请求头一样包含许多有用的信息,例如服务器类型,日期时间,内容类型和长度等",
+					"3、响应体,也就是响应正文"
+				]
+	},
+	{
+		"id": 7,
+		"src": "../../assets/card/card7.jpg",
+		"caption": "常见的HTTP状态码",
+		"title": "常见的HTTP状态码",
+		"desc": [
+					"200--OK--请求成功",
+					"301--Moved Permanently--资源移动.所请求资源移动到新的URL,浏览器自动跳转到新的URL",
+					"304--Not Modified--未修改.所请求资源未修改读取缓存数据",
+					"400--Bad Request--请求语法错误,服务器无法理解",
+					"404--Not Found--未找到资源,可以设置个性“404页面”",
+					"500--internal Server Error--服务器内部错误"
+				]
+	},
+	{
+		"id": 8,
+		"src": "../../assets/card/card8.jpg",
+		"caption": "background-attachment",
+		"title": "IE11下鼠标滚动时，图片会跳动",
+		"desc": [
+					"解决：",
+					"1、进入IE11浏览器Internet选项->高级，取消勾选“使用平滑滚动”即可",
+					"2、将背景设置属性应用到body上，而不是body的子元素，图片就不会跳动了"
+				]
+	},
+	{
+		"id": 9,
+		"src": "../../assets/card/card9.jpg",
+		"caption": "TCP",
+		"title": "TCP是一种面向连接的保证可靠传输的协议",
+		"desc": [
+					"特点：",
+					"1、TCP是面向连接的协议，通过三次握手建立连接，通讯完成时要拆除连接，由于TCP是面向连接协议，所以只能用于点对点的通讯。而且建立连接也需要消耗时间和开销",
+					"2、TCP传输数据无大小限制，进行大数据传输。",
+					"3、TCP是一个可靠的协议，它能保证接收方能够完整正确地接收到发送方发送的全部数据。"
+				]
+	},
+	{
+		"id": 10,
+		"src": "../../assets/card/card10.jpg",
+		"caption": "XHTML和HTML有什么区别",
+		"title": "XHTML和HTML有什么区别",
+		"desc": [
+					"HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标语言",
+					"最主要的不同：",
+					"1、XHTML 元素必须被正确地嵌套。",
+					"2、XHTML 元素必须被关闭",
+					"3、标签名必须用小写字母。",
+					"4、XHTML 文档必须拥有根元素。"
+				]
+	},
+	{
+		"id": 11,
+		"src": "../../assets/card/card11.jpg",
+		"caption": "对WEB标准以及W3C的理解与认识",
+		"title": "对WEB标准以及W3C的理解与认识",
+		"desc": [
+					"1、标签闭合、标签小写、不乱嵌套，有利于SEO",
+					"2、使用外链css和js脚本、结构行为表现的分离，提高页面的渲染速度，能更快地显示页面的内容",
+					"3、样式与标签的分离，更合理的语义化标签，使内容能被更多的用户所访问、内容能被更广泛的设备所访问、更少的代码和组件，从而降低维护成本、改版更方便",
+					"4、不需要变动页面内容，便可提供打印版本而不需要复制内容，提高网站易用性 从而降低维护成本、改版更方便"
+				]
+	},
+	{
+		"id": 12,
+		"src": "../../assets/card/card12.jpg",
+		"caption": "标准模式和怪异模式，严格模式与混杂模式",
+		"title": "区别是什么?",
+		"desc": [
+					"标准模式和怪异模式：",
+					"盒子模型 渲染模式的不同。",
+					"使用 window.top.document.compatMode 可显示为哪种模式。",
+					"严格模式与混杂模式：",
+					"严格模式的排版和 JS 运作模式是以该浏览器支持的最高标准运行。",
+					"在混杂模式中，页面以宽松的向后兼容的方式显示。模拟老式浏览器的行为以防止站点无法工作。"
+				]
+	},
+	{
+		"id": 13,
+		"src": "../../assets/card/card13.jpg",
+		"caption": "Doctype作用? ",
+		"title": "Doctype作用? ",
+		"desc": [
+					"<!DOCTYPE> 声明位于文档中的最前面，处于 <html> 标签之前。告知浏览器的解析器，用什么文档类型 规范来解析这个文档。",
+      				"DOCTYPE不存在或格式不正确会导致文档以混杂模式呈现。"
+				]
+	},
+	{
+		"id": 14,
+		"src": "../../assets/card/card14.jpg",
+		"caption": "语义化的理解？",
+		"title": "语义化的理解？",
+		"desc": [
+					"1、html语义化就是让页面的内容结构化，便于对浏览器、搜索引擎解析。",
+					"2、在没有样式CCS情况下也以一种文档格式显示，并且是容易阅读的。",
+					"3、搜索引擎的爬虫依赖于标记来确定上下文和各个关键字的权重，利于SEO。",
+					"4、使阅读源代码的人对网站更容易将网站分块，便于阅读维护理解。"
+				]
+	},
+	{
+		"id": 15,
+		"src": "../../assets/card/card15.jpg",
+		"caption": "HTML5的离线储存",
+		"title": "HTML5的离线储存",
+		"desc": [
+					"localStorage ",
+					"长期存储数据，浏览器关闭后数据不丢失",
+					"sessionStorage",
+					"数据在浏览器关闭后自动删除"
+				]
+	},
+	{
+		"id": 16,
+		"src": "../../assets/card/card16.jpg",
+		"caption": "cookies,sessionStorage,localStorage",
+		"title": "cookies，sessionStorage 和 localStorage 的区别？",
+		"desc": [
+					"1、cookie在浏览器和服务器间来回传递。 sessionStorage和localStorage不会",
+					"2、sessionStorage和localStorage的存储空间更大（5M），cookies只有4K",
+					"3、sessionStorage和localStorage有更多丰富易用的接口",
+					"4、sessionStorage和localStorage各自独立的存储空间"
+				]
+	},
+	{
+		"id": 17,
+		"src": "../../assets/card/card17.jpg",
+		"caption": "CSS引入的方式有哪些？",
+		"title": "CSS引入的方式有哪些？",
+		"desc": [
+					"1、使用<link>元素链接外部的样式文件",
+					"2、在head中使用<style></style>标签里面书写",
+					"3、在css中使用@import标记来导入样式表单",
+					"4、在DOM中插入style属性"
+				]
+	},
+	{
+		"id": 18,
+		"src": "../../assets/card/card18.jpg",
+		"caption": "CSS 选择符有哪些？",
+		"title": "CSS 选择符有哪些？",
+		"desc": [
+					"1.id选择器（ # myid）",
+				    "2.类选择器（.myclassname）",
+				    "3.标签选择器（div, h1, p）",
+				    "4.相邻选择器（h1 + p）",
+				    "5.子选择器（ul > li）",
+				    "6.后代选择器（li a）",
+				    "7.通配符选择器（ * ）",
+				    "8.属性选择器（a[rel = 'external']）",
+				    "9.伪类选择器（a: hover, li: nth - child）"
+				]
+	},
+	{
+		"id": 19,
+		"src": "../../assets/card/card19.jpg",
+		"caption": "如何解决跨域问题?",
+		"title": "如何解决跨域问题?",
+		"desc": [
+					"jsonp、iframe、window.name、window.postMessage、服务器上设置代理页面"
+				]
+	},
+	{
+		"id": 20,
+		"src": "../../assets/card/card0.jpg",
+		"caption": "reflow与repaint",
+		"title": "reflow（重新渲染）与repaint（重绘）",
+		"desc": [
+					"reflow：",
+					"reflow几乎是无法避免的。",
+					"鼠标滑过、点击……只要这些行为引起了页面上某些元素的占位面积、定位方式、边距等属性的变化，都会引起它内部、周围甚至整个页面的重新渲染。",
+					"repaint：",
+					"如果只是改变某个元素的背景色、文字颜色、边框颜色等等不影响它周围或内部布局的属性，将只会引起浏览器repaint。",
+					"repaint的速度明显快于 reflow。"
+				]
+	},
+	{
+		"id": 21,
+		"src": "../../assets/card/card1.jpg",
+		"caption": "overflow:hidden问题",
+		"title": "overflow:hidden问题",
+		"desc": [
+					"overflow:hidden和display:inline-block一起用时会造成baseline的移动，要加上vertical-align:bottom才能解决"
+				]
+	},
+	{
+		"id": 22,
+		"src": "../../assets/card/card2.jpg",
+		"caption": "overflow:scroll问题",
+		"title": "手机页面overflow:scroll滑动很卡的问题",
+		"desc": [
+					"在overflow:scroll后面加上：-webkit-overflow-scrolling: touch;"	,
+					"因为这行代码启用了硬件加速特性，所以滑动很流畅。但是这个属性也会相对耗费更多内存。"
+				]
+	},
+	{
+		"id": 23,
+		"src": "../../assets/card/card3.jpg",
+		"caption": "null，undefined的区别？",
+		"title": "null，undefined的区别？",
+		"desc": [
+					"null是一个表示“无”的{对象}，转为数值时为0；undefined是一个表示“无”的{原始值}，转为数值时为NaN。"
+				]
+	}
+]
