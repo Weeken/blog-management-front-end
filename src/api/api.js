@@ -70,8 +70,9 @@ axios.interceptors.response.use(function (response) {
 }, function (error) {
   // Do something with response error
   console.log(error.response)
-  if (error.response.status === 401 && error.response.data.type === 'auth_error') {
-    Storage.removeItem('user')
+  if (error.response.status === 401 && error.response.data.type === 'admin_error') {
+    Storage.removeItem('admin')
+    location.href = `https://admin.weeken.top/#/login`
   }
   return Promise.reject(error)
 })
