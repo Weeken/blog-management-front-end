@@ -6,9 +6,9 @@
         "targets": {
           "browsers": ["last 2 versions", "safari >= 7"]
         }
-      },
-      "stage-0"
-    ]
+      }
+    ],
+    "@babel/preset-stage-2"
   ],
-  "plugins": ["syntax-dynamic-import"]
+  "plugins": ["syntax-dynamic-import", ["@babel/plugin-transform-runtime", {"moduleName": "@babel/runtime"}]]
 }
