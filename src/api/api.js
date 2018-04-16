@@ -23,7 +23,10 @@ const URL = {
   ADDNOTE: `${BASE}/notes/admin/addNotes`,
   NOTEDETAILS: `${BASE}/notes/admin/noteDetails`,
   UPDATENOTE: `${BASE}/notes/admin/updateNote`,
-  DELETENOTE: `${BASE}/notes/admin/deleteNotes`
+  DELETENOTE: `${BASE}/notes/admin/deleteNotes`,
+
+  USERLIST: `${BASE}/users/admin/userList`,
+  FINDUSERS: `${BASE}/users/admin/findUser`
 }
 
 function error (err, fail) {
@@ -122,5 +125,12 @@ export default {
   async deleteNote (id, fail) {
     let url = `${URL.DELETENOTE}/${id}`
     return await handler(axios.delete(url), fail)
+  },
+  // 访客管理
+  async getUsers (page, fail) {
+    return await handler(axios.get(URL.USERLIST, {params: {page: page}}), fail)
+  },
+  async findUsers (params, fail) {
+    return await handler(axios.get(URL.FINDUSERS, {params: params}), fail)
   }
 }

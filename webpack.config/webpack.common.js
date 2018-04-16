@@ -44,7 +44,7 @@ module.exports = {
         commons: {
           test: /[\\/]node_modules[\\/]/,
           name: 'vendor',
-          chunks: 'all',
+          chunks: 'async',
           minChunks: 2,
           maxInitialRequests: 5, // The default limit is too small to showcase the effect
           minSize: 0 // This is example is too small to create commons chunks
